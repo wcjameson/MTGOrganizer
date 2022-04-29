@@ -1,4 +1,4 @@
-doing a littl research/maybe changing my whole capstone idea currently.
+doing a little research/maybe changing my whole capstone idea currently.
 
 Thinking about doing a Magic the Gathering organizer app.
 MVP behavior is user can add/edit/delete mtg cards to their collection
@@ -10,18 +10,23 @@ Quick reference button for all game formats?
 
 Is this card banned? Button
 
+Life counter, companion for playing a game of MTG
+
 Open a random booster functionality? /sets/:id/booster 
 
 Banner that has a random flavor text?
 
 https://github.com/MagicTheGathering/mtg-sdk-javascript //SDK for MTG API
 
+https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/
+
 Research and Planning log
 
-8:00 - 10:00 : deciding whether to switch capstone ideas or not.
+8:00 - 10:00 : deciding whether to switch capstone ideas or not. Debating which tech stack is most appropriate.
 10:00 - 11:00 : choosing tech stack and researching the MTG API I want to use
 11:00 : Researching MTG API Javascript SDK
 1:00 : add ReadMe.md 
-2:00 : Read Firebase Documentation
+1:30 : exploring using react in .NET Core
+2:00 - 4:30 : Read Firebase Documentation and read about differences between NoSQL and SQL
 
 
