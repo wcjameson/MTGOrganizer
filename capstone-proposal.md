@@ -18,8 +18,10 @@ MySQL
 If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 Be able to reference a MTG database by set or specific card from the API.
 Be able to search/sort your own collection.
+Authorization with Identity?
 
 What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 MTG API ( https://docs.magicthegathering.io/ )
+Identity
 
 Is there anything else you'd like your instructor to know?
