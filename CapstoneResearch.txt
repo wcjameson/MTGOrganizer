@@ -1,1 +1,13 @@
 doing a littl research/maybe changing my whole capstone idea currently.
+
+Thinking about doing a Magic the Gathering organizer app.
+MVP behavior is user can add/edit/delete mtg cards to their collection
+
+Use an API to lookup cards by name or set etc.
+(MTG API - https://docs.magicthegathering.io/)
+
+Research and Planning log
+
+8:00 - 10:00: deciding whether to switch capstone ideas or not.
+10:00 - 11:00: choosing tech stack and researching the MTG API I want to use
+11:00: Researching MTG API .NET SDK
