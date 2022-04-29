@@ -19,7 +19,13 @@ Firebase
 If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 Be able to reference a MTG database by set or specific card from the API.
 Be able to search your own collection by card name.
+
 User Authentication?
+Provide user with the allowed gameFormat for a card.
+Quick reference button for all game formats?
+Button to see legal status of card; Is this card banned?
+
+Open a random booster functionality?
 
 What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 MTG API ( https://docs.magicthegathering.io/ )

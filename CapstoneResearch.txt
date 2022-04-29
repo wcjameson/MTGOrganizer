@@ -6,9 +6,19 @@ MVP behavior is user can add/edit/delete mtg cards to their collection
 Use an API to lookup cards by name or set etc.
 (MTG API - https://docs.magicthegathering.io/)
 
+Quick reference button for all game formats?
+
+Is this card banned? Button
+
+Open a random booster functionality? /sets/:id/booster 
+
+Banner that has a random flavor text?
+
 Research and Planning log
 
-8:00 - 10:00: deciding whether to switch capstone ideas or not.
-10:00 - 11:00: choosing tech stack and researching the MTG API I want to use
-11:00: Researching MTG API Javascript SDK
-1:00: Read Firebase Documentation
+8:00 - 10:00 : deciding whether to switch capstone ideas or not.
+10:00 - 11:00 : choosing tech stack and researching the MTG API I want to use
+11:00 : Researching MTG API Javascript SDK
+1:00 : add ReadMe.md 
+2:00 : Read Firebase Documentation
+

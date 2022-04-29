@@ -17,6 +17,7 @@
 ## Description
 
 This webapp lets the user manage their Magic the Gathering collection, with CRUD functionality, storing input in a database for future reference.
+User may also reference the different game formats for a given card.
 
 ## Setup/Installation Requirements
 
