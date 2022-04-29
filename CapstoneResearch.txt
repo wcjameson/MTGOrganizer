@@ -14,6 +14,8 @@ Open a random booster functionality? /sets/:id/booster
 
 Banner that has a random flavor text?
 
+https://github.com/MagicTheGathering/mtg-sdk-javascript //SDK for MTG API
+
 Research and Planning log
 
 8:00 - 10:00 : deciding whether to switch capstone ideas or not.
@@ -21,4 +23,5 @@ Research and Planning log
 11:00 : Researching MTG API Javascript SDK
 1:00 : add ReadMe.md 
 2:00 : Read Firebase Documentation
+
 
