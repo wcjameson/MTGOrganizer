@@ -29,4 +29,8 @@ Research and Planning log
 1:30 : exploring using react in .NET Core
 2:00 - 4:30 : Read Firebase Documentation and read about differences between NoSQL and SQL
 
+day 2
+
+8:00 :   Read up on Tailwind css
+
 
