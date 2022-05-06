@@ -9,6 +9,11 @@ function Card(props){
       <p>{props.color}</p>
     </React.Fragment>
   )
+};
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired
 }
 
 export default Card;
