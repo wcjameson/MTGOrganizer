@@ -1,6 +1,6 @@
 # MTG Collection
 
-![image](/img/Squee.jpg)
+![image](/mtg-organizer/img/Squee.jpg)
 
 #### A tool to help manage your Magic the Gathering collection
 
