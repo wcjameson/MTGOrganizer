@@ -6,8 +6,8 @@ import EditCardForm from './EditCardForm';
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import * as a from './../actions';
-import { withFirestore, isLoaded } from 'react-redux-firebase'
-//To Do => CardControl conditionals to show components and create/define methods for 'CRUD' capabilities.
+import { withFirestore } from 'react-redux-firebase'
+//To Do =>  Configure database rules, add auth/login, collections and fields firestore, styling w/ react bootstrap
 
 class CardControl extends React.Component {
 
@@ -15,12 +15,12 @@ class CardControl extends React.Component {
     super(props);
     this.state = {
       selectedCard: null,
-      editing: false,
+      editing: false
     };
   }
 
 
-  handleAddingNewCardToList() {
+  handleAddingNewCardToList = () => {
     const { dispatch } = this.props;
     console.log(this.props);
     const action = a.toggleForm();
@@ -59,7 +59,7 @@ class CardControl extends React.Component {
   }
 
   handleClick = () => {
-    if (this.selectedCard != null) {
+    if (this.state.selectedCard != null) {
       this.setState({
         selectedCard: null,
         editing: false

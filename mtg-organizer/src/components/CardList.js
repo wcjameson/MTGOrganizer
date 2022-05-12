@@ -20,7 +20,9 @@ function CardList(props) {
           return <Card
           whenCardClicked={props.onCardSelection}
           name={card.name}
-          color={card.color} />
+          color={card.color}
+          id={card.id}
+          key={card.id} />
         })}
       </React.Fragment>
     )
