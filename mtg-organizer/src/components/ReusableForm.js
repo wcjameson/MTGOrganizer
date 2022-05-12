@@ -25,3 +25,5 @@ ReusableForm.propTypes = {
   formSubmissionHandler: PropTypes.func
 
 }
+
+export default ReusableForm;
