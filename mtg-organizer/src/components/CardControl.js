@@ -2,9 +2,12 @@ import React from 'react';
 import NewCardForm from './NewCardForm';
 import CardList from './CardList';
 import CardDetail from './CardDetail';
+import EditCardForm from './EditCardForm';
 import PropTypes from "prop-types";
-
-//To Do => CardControl conditionals to show components and create/define methods for 'CRUD' capabilities. Update src/index.js entrypoint/add Firebase/Firestore context.  Create reducers card-list and form-visible for deleting a card and toggleing between components
+import { connect } from 'react-redux';
+import * as a from './../actions';
+import { withFirestore, isLoaded } from 'react-redux-firebase'
+//To Do => CardControl conditionals to show components and create/define methods for 'CRUD' capabilities.
 
 class CardControl extends React.Component {
 
@@ -12,19 +15,101 @@ class CardControl extends React.Component {
     super(props);
     this.state = {
       selectedCard: null,
-      editing: false
+      editing: false,
     };
   }
 
+
+  handleAddingNewCardToList() {
+    const { dispatch } = this.props;
+    console.log(this.props);
+    const action = a.toggleForm();
+    dispatch(action);
+  }
+
+  handleEditingCardInList = () => {
+    this.setState({
+      editing: false,
+      selectedCard: null
+    });
+  }
+
+  handleChangingSelectedCard = (id) => {
+    this.props.firestore.get({ collection: 'cards', doc: id }).then((card) => {
+      const firestoreCard = {
+        name: card.get("name"),
+        color: card.get("color"),
+        id: card.id
+      }
+      this.setState({ selectedCard: firestoreCard });
+    })
+  }
+
+  handleDeletingCard = (id) => {
+    this.props.firestore.delete({ collection: 'cards', doc: id });
+    this.setState({
+      selectedCard: null
+    });
+  }
+
+  handleEditClick = () => {
+    this.setState({
+      editing: true
+    });
+  }
+
+  handleClick = () => {
+    if (this.selectedCard != null) {
+      this.setState({
+        selectedCard: null,
+        editing: false
+      });
+    } else {
+      const { dispatch } = this.props;
+      const action = a.toggleForm();
+      dispatch(action);
+    }
+  }
+
   render() {
+    let currentlyVisibleState = null;
+    let buttonText = null;
+
+    if (this.state.editing) {
+      currentlyVisibleState = <EditCardForm card={this.state.selectedCard} onClickingEdit={this.handleEditingCardInList} />
+      buttonText = "Card List";
+    } else if (this.state.selectedCard != null) {
+      currentlyVisibleState = <CardDetail card={this.state.selectedCard} onClickingDelete={this.handleDeletingCard} onClickingEdit={this.handleEditClick} />
+      buttonText = "Card List";
+    } else if (this.props.formVisibleOnPage) {
+      currentlyVisibleState = <NewCardForm onNewCardCreation={this.handleAddingNewCardToList} />;
+      buttonText = "Card List";
+    } else {
+      currentlyVisibleState = <CardList onCardSelection={this.handleChangingSelectedCard} />;
+      buttonText = "Add Card";
+    }
 
 
-    return(
+    return (
       <React.Fragment>
-
+        {currentlyVisibleState}
+        <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     )
   }
 }
 
-export default CardControl
+const mapStateToProps = state => {
+  return {
+    // mainCardList: state.mainCardList, //mapping state slices to component props
+    formVisibleOnPage: state.formVisibleOnPage
+  }
+}
+
+CardControl.propTypes = {
+  formVisibleOnPage: PropTypes.bool
+};
+
+CardControl = connect(mapStateToProps)(CardControl);
+
+export default withFirestore(CardControl);
