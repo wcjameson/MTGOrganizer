@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./Header";
 import CardControl from "./CardControl"
 import Signin from "./Signin";
-import SignUp from "./Signup";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -16,9 +15,6 @@ function App() {
         </Route>
         <Route path="/">
       <CardControl />
-        </Route>
-        <Route path="/signup">
-          <SignUp />
         </Route>
       </Switch>
     </Router>

@@ -8,8 +8,7 @@ function Header() {
     <React.Fragment>
       <h1>MTGOrganizer</h1>
       <Navbar.Brand href='/'> Home </Navbar.Brand>
-      <Navbar.Brand href='/signin'> Sign In </Navbar.Brand>
-      <Navbar.Brand href='/signup'> Sign Up </Navbar.Brand>
+      <Navbar.Brand href='/signin'> Account/Sign In </Navbar.Brand>
 
       {/* <ul>
         <li>
