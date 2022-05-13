@@ -34,3 +34,7 @@ day 2
 8:00 :   Read up on Tailwind css
 
 
+
+05/13
+https://getbootstrap.com/docs/5.1
+A lot of reading about bootstrap/reactstrap/react-bootstrap
