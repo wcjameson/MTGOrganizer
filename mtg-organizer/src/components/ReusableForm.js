@@ -14,6 +14,10 @@ function ReusableForm(props) {
           type='text'
           name='color'
           placeholder='card color' />
+          <input
+          type='text' 
+          name='imageURL'
+          placeholder='image URL' />
           <button type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>

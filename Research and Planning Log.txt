@@ -38,3 +38,4 @@ day 2
 05/13
 https://getbootstrap.com/docs/5.1
 A lot of reading about bootstrap/reactstrap/react-bootstrap
+Reading Styled Components documentation

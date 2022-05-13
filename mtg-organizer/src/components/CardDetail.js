@@ -8,6 +8,8 @@ function CardDetail(props) {
     <React.Fragment>
       <h1>Card Detail</h1>
       <h3>{card.name} - {card.color}</h3>
+      <img src={card.imageURL} alt="some text"></img>
+      <br></br>
       <button onClick={ props.onClickingEdit }>Edit card</button>
       <button onClick= {() => props.onClickingDelete(card.id)}>Delete card</button>
     </React.Fragment>

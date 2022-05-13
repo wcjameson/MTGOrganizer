@@ -39,6 +39,7 @@ class CardControl extends React.Component {
       const firestoreCard = {
         name: card.get("name"),
         color: card.get("color"),
+        imageURL: card.get("imageURL"),
         id: card.id
       }
       this.setState({ selectedCard: firestoreCard });

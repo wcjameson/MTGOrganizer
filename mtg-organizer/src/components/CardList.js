@@ -21,6 +21,7 @@ function CardList(props) {
           whenCardClicked={props.onCardSelection}
           name={card.name}
           color={card.color}
+          imageURL={card.imageURL}
           id={card.id}
           key={card.id} />
         })}

@@ -13,6 +13,7 @@ function NewCardForm(props) {
     return firestore.collection('cards').add({
       name: event.target.name.value,
       color: event.target.color.value,
+      imageURL: event.target.imageURL.value,
       timeOpen: firestore.FieldValue.serverTimestamp()
     });
   }
