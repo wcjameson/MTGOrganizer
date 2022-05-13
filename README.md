@@ -12,7 +12,7 @@
 * HTML/CSS
 * Node.js/npm
 * React
-* Firebase
+* Firebase/Firestore
 
 ## Description
 

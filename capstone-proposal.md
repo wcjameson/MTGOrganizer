@@ -14,7 +14,7 @@ What tools, frameworks, libraries, APIs, modules and/or other resources (whateve
 JS
 HTML/CSS
 Node.js/npm
-React
+React/Redux
 Firebase/Firestore
 
 If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
@@ -29,6 +29,7 @@ Open a random booster functionality?
 
 What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 MTG API ( https://docs.magicthegathering.io/ )
+Thunk middleware
 
 
 Is there anything else you'd like your instructor to know?
