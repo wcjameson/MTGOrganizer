@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
 
 function Header() {
   return (
+
     <React.Fragment>
       <h1>MTGOrganizer</h1>
-      <ul>
+      <Navbar.Brand href='/'> Home </Navbar.Brand>
+      <Navbar.Brand href='/signin'> Sign In </Navbar.Brand>
+      <Navbar.Brand href='/signup'> Sign Up </Navbar.Brand>
+
+      {/* <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/signin">Sign In</Link>
+          <Link to="/signin">Account</Link>
         </li>
-      </ul>
+      </ul> */}
     </React.Fragment>
   )
 }
