@@ -16,6 +16,7 @@ function CardList(props) {
 
     return(
       <React.Fragment>
+        <div className='container'>
         {cards.map((card) => {
           return <Card
           whenCardClicked={props.onCardSelection}
@@ -25,6 +26,7 @@ function CardList(props) {
           id={card.id}
           key={card.id} />
         })}
+        </div>
       </React.Fragment>
     )
   } else {

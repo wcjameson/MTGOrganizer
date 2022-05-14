@@ -10,6 +10,10 @@ import { ReactReduxFirebaseProvider  } from 'react-redux-firebase';
 import { createFirestoreInstance  } from 'redux-firestore';
 import firebase from "./firebase";
 import 'firebase/compat/auth';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import $ from 'jquery';
+// import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const store = createStore(rootReducer);
 
