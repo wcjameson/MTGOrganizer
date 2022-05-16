@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 function CardDetail(props) {
   const { card, onClickingDelete } = props;
 
-//TODO=> additional bootstrap styling, style signin/up forms, add some sort of banner? After some basic styling, incorporate mtg API.
-  
+//TODO=> incorporate mtg API.
+
   return (
     <React.Fragment>
       
-      <div className="container">
+      <div className="container col-md-2 align-items-center">
       <h1>{card.name}</h1>
       <img src={card.imageURL} alt="some text" Style="width: 18rem"></img>
       <br></br>

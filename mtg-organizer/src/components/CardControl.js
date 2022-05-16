@@ -102,7 +102,6 @@ class CardControl extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    // mainCardList: state.mainCardList, //mapping state slices to component props
     formVisibleOnPage: state.formVisibleOnPage
   }
 }

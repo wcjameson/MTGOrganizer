@@ -4,6 +4,7 @@ import firebase from "firebase/compat/app";
 
 function Signin() {
 
+
   function doSignUp(event) {
     event.preventDefault();
     const email = event.target.email.value;
