@@ -35,7 +35,9 @@ function CardList(props) {
   } else {
     return (
       <React.Fragment>
+        
         <h3>Summoning collection...</h3>
+
       </React.Fragment>
     )
   }

@@ -9,7 +9,7 @@ function Signin() {
     const email = event.target.email.value;
     const password = event.target.password.value;
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
-      console.log("successfully signed up!");
+      alert("successfully signed up!");
     }).catch(function (error) {
       console.log(error.message);
     });
@@ -20,7 +20,7 @@ function Signin() {
     const email = event.target.signinEmail.value;
     const password = event.target.signinPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
-      console.log("Successfully signed in!");
+      alert("Successfully signed in!");
     }).catch(function (error) {
       console.log(error.message);
     });
@@ -28,7 +28,7 @@ function Signin() {
 
   function doSignOut() {
     firebase.auth().signOut().then(function () {
-      console.log("Successfully signed out!");
+      alert("Successfully signed out!");
     }).catch(function (error) {
       console.log(error.message);
     });
@@ -36,6 +36,7 @@ function Signin() {
 
   return(
     <React.Fragment>
+      <div className="container">
       <h1>Sign up</h1>
       <form onSubmit={doSignUp}>
         <input
@@ -62,8 +63,10 @@ function Signin() {
         <button type='submit'>Sign in</button>
       </form>
 
-      <h1>Sign Out</h1>
+      {/* <h1>Sign Out</h1> */}
+      <br></br>
       <button onClick={doSignOut}>Sign out</button>
+      </div>
     </React.Fragment>
   )
 }

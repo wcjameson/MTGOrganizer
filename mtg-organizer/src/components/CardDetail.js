@@ -8,9 +8,9 @@ function CardDetail(props) {
   
   return (
     <React.Fragment>
-      <h1>Card Detail</h1>
+      
       <div className="container">
-      <h3>{card.name} - {card.color}</h3>
+      <h1>{card.name}</h1>
       <img src={card.imageURL} alt="some text" Style="width: 18rem"></img>
       <br></br>
       <button onClick={ props.onClickingEdit }>Edit card</button>

@@ -81,7 +81,7 @@ class CardControl extends React.Component {
       buttonText = "Card List";
     } else if (this.state.selectedCard != null) {
       currentlyVisibleState = <CardDetail card={this.state.selectedCard} onClickingDelete={this.handleDeletingCard} onClickingEdit={this.handleEditClick} />
-      buttonText = "Card List";
+      buttonText = "Back to List";
     } else if (this.props.formVisibleOnPage) {
       currentlyVisibleState = <NewCardForm onNewCardCreation={this.handleAddingNewCardToList} />;
       buttonText = "Card List";
