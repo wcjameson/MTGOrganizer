@@ -39,10 +39,10 @@ function Header() {
 
       <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
         <h1>MTGOrganizer</h1>
-          <div class="container-fluid">
-            <button
+          <div className="container-fluid">
+            {/* <button
               class="navbar-toggler"
               type="button"
               data-mdb-toggle="collapse"
@@ -51,17 +51,17 @@ function Header() {
               aria-expanded="false"
               aria-label="Toggle navigation">
               <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMTG">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="/">Home</a>
+            </button> */}
+            <div className="collapse navbar-collapse" id="navbarMTG">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item active">
+                  <a className="nav-link" aria-current="page" href="/" >Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/signin">Account</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/signin" >Account</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">About</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/" >About</a>
                 </li>
               </ul>
             </div>
