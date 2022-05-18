@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 function CardDetail(props) {
   const { card, onClickingDelete } = props;
 
-//TODO=> incorporate mtg API.
-
   return (
     <React.Fragment>
       

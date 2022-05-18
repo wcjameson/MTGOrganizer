@@ -65,7 +65,6 @@ function Signin() {
           placeholder='Password' />
         <button type='submit' class="btn btn-dark">Sign up</button>
       </form>
-      {/* <h1>Sign Out</h1> */}
       <br></br>
       <button onClick={doSignOut} className="btn btn-dark">Sign out</button>
       </div>

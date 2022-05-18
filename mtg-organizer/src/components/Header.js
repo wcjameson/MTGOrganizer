@@ -1,18 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-
 
 function Header() {
   return (
 
     <React.Fragment>
-      {/* <div className="container-fluid">
-        <h1>MTGOrganizer</h1>
-
-        <Link to="/">Home</Link>
-
-        <Link to="/signin">Account</Link>
-      </div> */}
 
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-secondary">

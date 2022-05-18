@@ -38,7 +38,7 @@ Keep track of your collection of rares, or whatever cards you'd like.
 
 ## Component Diagram
 
-![image](/mtg-organizer\img\MTGComponentDiagram.png)
+![image](/mtg-organizer\img\MTGComponentDiagram.jpg)
 
 ## Known Bugs
 
