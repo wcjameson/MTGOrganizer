@@ -21,7 +21,7 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarMTG">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item active">
-                  <a className="nav-link" aria-current="page" href="/" >Home</a>
+                  <a className="nav-link" aria-current="page" href="/" >Collection</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/signin" >Account</a>

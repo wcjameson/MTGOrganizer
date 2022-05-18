@@ -37,36 +37,37 @@ function Signin() {
 
   return(
     <React.Fragment>
-      <div className="container">
-      <h1>Sign up</h1>
-      <form onSubmit={doSignUp}>
-        <input
-          type='text'
-          name='email'
-          placeholder='email' />
-        <input
-          type='password'
-          name='password'
-          placeholder='Password' />
-        <button type='submit'>Sign up</button>
-      </form>
+      <div className="container col-md-4">
 
       <h1>Sign In</h1>
       <form onSubmit={doSignIn}>
-        <input
+        <input className="form-control"
           type='text'
           name='signinEmail'
           placeholder='email' />
-        <input
+        <input className="form-control"
           type='password'
           name='signinPassword'
           placeholder='Password' />
-        <button type='submit'>Sign in</button>
+        <button type='submit' className="btn btn-dark">Sign in</button>
       </form>
 
+      <br></br>
+      <h1>Sign Up</h1>
+      <form onSubmit={doSignUp}>
+        <input className="form-control"
+          type='text'
+          name='email'
+          placeholder='email' />
+        <input className="form-control"
+          type='password'
+          name='password'
+          placeholder='Password' />
+        <button type='submit' class="btn btn-dark">Sign up</button>
+      </form>
       {/* <h1>Sign Out</h1> */}
       <br></br>
-      <button onClick={doSignOut}>Sign out</button>
+      <button onClick={doSignOut} className="btn btn-dark">Sign out</button>
       </div>
     </React.Fragment>
   )

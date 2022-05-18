@@ -7,7 +7,6 @@ import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import * as a from './../actions';
 import { withFirestore } from 'react-redux-firebase'
-//To Do =>  Configure database rules, add auth/login, collections and fields firestore, styling w/ react bootstrap
 
 class CardControl extends React.Component {
 
@@ -73,32 +72,34 @@ class CardControl extends React.Component {
   }
 
   render() {
-    let currentlyVisibleState = null;
-    let buttonText = null;
+      let currentlyVisibleState = null;
+      let buttonText = null;
 
-    if (this.state.editing) {
-      currentlyVisibleState = <EditCardForm card={this.state.selectedCard} onClickingEdit={this.handleEditingCardInList} />
-      buttonText = "Card List";
-    } else if (this.state.selectedCard != null) {
-      currentlyVisibleState = <CardDetail card={this.state.selectedCard} onClickingDelete={this.handleDeletingCard} onClickingEdit={this.handleEditClick} />
-      buttonText = "Back to List";
-    } else if (this.props.formVisibleOnPage) {
-      currentlyVisibleState = <NewCardForm onNewCardCreation={this.handleAddingNewCardToList} />;
-      buttonText = "Card List";
-    } else {
-      currentlyVisibleState = <CardList onCardSelection={this.handleChangingSelectedCard} />;
-      buttonText = "Add Card";
+      if (this.state.editing) {
+        currentlyVisibleState = <EditCardForm card={this.state.selectedCard} onClickingEdit={this.handleEditingCardInList} />
+        buttonText = "Card List";
+      } else if (this.state.selectedCard != null) {
+        currentlyVisibleState = <CardDetail card={this.state.selectedCard} onClickingDelete={this.handleDeletingCard} onClickingEdit={this.handleEditClick} />
+        buttonText = "Back to List";
+      } else if (this.props.formVisibleOnPage) {
+        currentlyVisibleState = <NewCardForm onNewCardCreation={this.handleAddingNewCardToList} />;
+        buttonText = "Card List";
+      } else {
+        currentlyVisibleState = <CardList onCardSelection={this.handleChangingSelectedCard} />;
+        buttonText = "Add Card";
+      }
+
+
+      return (
+        <React.Fragment>
+          <br></br>
+          <button class="btn btn-dark" onClick={this.handleClick}>{buttonText}</button>
+          {currentlyVisibleState}
+        </React.Fragment>
+      )
     }
-
-
-    return (
-      <React.Fragment>
-        {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
-      </React.Fragment>
-    )
   }
-}
+
 
 const mapStateToProps = state => {
   return {
