@@ -8,13 +8,12 @@
 
 ## Technologies Used
 
-* JS
-* HTML
-* CSS
-* NPM Webpack
+* Node.js
+* Webpack
 * React
 * Redux
-* Firebase/Firestore
+* Firebase
+* Firestore
 * Bootstrap
 
 ## Description
