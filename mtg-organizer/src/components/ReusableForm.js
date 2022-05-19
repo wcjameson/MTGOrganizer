@@ -10,15 +10,18 @@ function ReusableForm(props) {
             <input className="form-control"
               type='text'
               name='name'
-              placeholder='card name' />
+              placeholder='card name'
+              required />
             <input className="form-control"
               type='text'
               name='color'
-              placeholder='card color' />
+              placeholder='card color'
+              required />
             <input className="form-control"
               type='text'
               name='imageURL'
-              placeholder='image URL' />
+              placeholder='image URL'
+              required />
             <button type='submit' class="btn btn-dark">{props.buttonText}</button>
           </form>
         </div>
